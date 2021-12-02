@@ -1,0 +1,67 @@
+@media (min-width: 992px){
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 19.666667%;
+}
+}
+
+    @media(min-width: 480px) and (max-width: 1180px){
+        #menu ul
+        {
+            width: 100%;
+            background-color: #333;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+            display: block;
+            position: absolute;
+            top: 50px;right: -110%;
+            z-index: 999999999999999999;
+            margin-right: 20px;
+            padding: 20px;
+            transition: .7s;
+            border-radius: 10px;
+        }
+        #menu ul li:nth-child(0){margin-top: 40px;}
+
+        #menu ul li
+        {
+            text-align: center;
+            border-right: 5px solid rgb(243, 34, 34);
+            background: #EEE;
+            transition: .3s;
+            margin: 3px;
+        }
+        #menu ul li:hover a{color:rgb(243, 34, 34);}
+        #menu ul li:hover{transform: scale(1.04);}
+        #menu ul .fade:hover{color: red; border:1px solid red;}
+        #show, #hide
+        {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer; 
+        }
+        #hide{display: none;}
+        #specielty{margin-top: 511px;}
+        #gallery .content h3, #gallery .content p, #gallery .content button
+        {
+            margin: 20px;
+            line-height: 42px;
+        }
+        #review .box{margin-top: 110px;}
+        .slide-control .prev
+        {
+            float: left;
+            margin-left: -20px;
+        }
+        .slide-control .next
+        {
+            float: right;
+            margin-right: 120;
+        }
+    }
+    

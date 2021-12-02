@@ -1,0 +1,375 @@
+*::selection
+{
+    background-color: rgb(250, 40, 40);
+    color: white;
+}
+body
+{
+    text-transform: capitalize;
+    background: #f7f7f7;
+}
+.pos
+{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 99999999999999999;
+}
+
+.bg-white
+{
+    box-shadow: 11px -2px 8px 0px #999898;
+}
+.nav
+{
+    margin-left: 45px;    
+}
+.nav li
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* End navbar*/
+
+/* Start Home*/
+#home
+{
+    margin-top: 210px;
+    margin-bottom: 75px;
+}
+
+#home 
+
+
+.ramy
+{
+    
+    position: relative;
+}
+
+#home .animated
+{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    border: none;
+    animation: ramy 3s infinite ease-in-out;
+}
+
+.btn
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    width: 171px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(248, 68, 68);
+    width: 0%;
+    height: 100%;
+    transition: .2s linear;
+}
+.btn:hover::before
+{
+    width: 100%;
+    left: 0;
+    color: white;
+}
+.btn:hover{color: white;}
+
+@keyframes ramy
+{
+    0%, 100%{top:0rem}
+    50%{top: 3rem}
+}
+/*End Home*/
+/* start specielty*/
+#specielty
+{
+    margin-top: 300px;
+}
+#specielty .box
+{
+    position: relative;
+    background: #DDD;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+}
+#specielty .box .bergr img
+{
+    position: absolute;
+    top: -100%;left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+#specielty .box:hover img{
+    top:0;
+}
+
+
+
+
+/* End specielty*/
+
+/* Start populer*/
+#populer .stars .fa-star
+{
+    color: yellow;
+}
+#populer .box {position: relative ;}
+#populer .box .price
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgb(237 32 32 / 58%);
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 80px;
+}
+/* End populer*/
+
+/* Start steps*/
+#steps 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#steps .box
+{
+    flex:1 1 17rem;
+    padding:1rem;
+    text-align: center;
+}
+
+#steps .box img
+{
+    border-radius: 50%;
+    border: 1rem solid #f7f7f7;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.22%);
+}
+#steps .box h3{
+    font-size: 25px;
+    color: #504d4d;
+
+}
+/* End steps*/
+
+/* Start Gallery */
+#gallery .box
+{
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery .box .content
+{
+    position: absolute;
+    top: -100%;left: 0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background: rgb(255 255 255 / 90%);
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .7s ease-in-out; 
+}
+
+#gallery .box:hover .content
+{
+    top: 0;
+}
+
+/* End gallery */
+
+/* Start Reviews*/
+#review .box 
+{
+    background: #333;
+    text-align: center;
+    color: #f7f7f7;
+    margin-top: 70px;
+    box-shadow: -1px -1px 11px 0px #333;
+}
+
+#review .box img
+{
+    width:150px;
+    height: 150px;
+    margin-top: -22%;
+}
+/* End Reviews*/
+
+/* Start footer*/
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* End footer*/
+
+/*Start top*/
+.top
+{
+    position: fixed;
+    bottom: 20px; right: 20px;
+    background: rgb(247, 12, 12);
+    color: white;
+    width: 50px; height: 50px;
+    font-size:37px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999999999999999999;
+}
+
+
+#show
+{
+    display: none;
+}
+/*End top*/
+
+/* start loaders*/
+.loaders
+{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 99999999999999999999;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaders img
+{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* slider */
+
+.container-slider
+{
+    margin: 103px auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
+}
+.container-slider img
+{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: 148px;
+}
+
+.container-slider img.active
+{
+    opacity: 1;
+    
+}
+
+.container-slider .slide-number
+{
+    position: absolute;
+    left: 154px; top: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+}
+
+.slide-control
+{
+    width: 800px;
+    margin:100px auto;
+}
+
+.slide-control .prev, .slide-control .next
+{
+    background: #009688;
+    color: #fff;
+    font-size: 16px;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+    padding: 5px;
+} 
+
+.slide-control .prev
+{
+    float: left;
+}
+.slide-control .next
+{
+    float: right;
+}
+
+.slide-control .prev.disabled, .slide-control .next.disabled
+{
+    background: rgba(0, 150, 136, .5);
+    cursor: no-drop;
+}
+
+.slide-control .indecators ul
+{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.slide-control .indecators
+{
+    width: 60%;
+    float: left;
+}
+
+
+.slide-control .indecators ul li
+{
+    display: inline-block;
+    background-color: #f6f6f6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.slide-control .indecators ul li.active
+{
+    background: #009688;
+    color: #fff;
+}
